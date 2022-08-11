@@ -4,8 +4,17 @@ status: true
 dependencies:
   config:
     - commerce_product.commerce_product_variation_type.default
+    - field.field.commerce_product_variation.default.field_background_color
+    - field.field.commerce_product_variation.default.field_body
+    - field.field.commerce_product_variation.default.field_image
+    - field.field.commerce_product_variation.default.field_qty
+    - image.style.thumbnail
   module:
+    - color_field
     - commerce_price
+    - commerce_stock_field
+    - image
+    - text
 _core:
   default_config_hash: dDLA40Axom_QFA79EWUpe_bWXWE8I_7MijzPkslbVfA
 id: commerce_product_variation.default.default
@@ -13,28 +22,55 @@ targetEntityType: commerce_product_variation
 bundle: default
 mode: default
 content:
+  field_background_color:
+    type: color_field_widget_html5
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_body:
+    type: text_textarea_with_summary
+    weight: 1
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  field_image:
+    type: image_image
+    weight: 4
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_qty:
+    type: commerce_stock_level_simple_transaction
+    weight: 2
+    region: content
+    settings:
+      step: '1'
+      custom_transaction_note: false
+      default_transaction_note: 'Transaction issued by stock level field.'
+    third_party_settings: {  }
   langcode:
     type: language_select
-    weight: 2
+    weight: 6
     region: content
     settings:
       include_locked: true
     third_party_settings: {  }
-  list_price:
-    type: commerce_list_price
-    weight: -1
-    region: content
-    settings: {  }
-    third_party_settings: {  }
   price:
     type: commerce_price_default
-    weight: 0
+    weight: 3
     region: content
     settings: {  }
     third_party_settings: {  }
   sku:
     type: string_textfield
-    weight: -4
+    weight: 0
     region: content
     settings:
       size: 60
@@ -42,11 +78,13 @@ content:
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    weight: 10
+    weight: 7
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
 hidden:
+  commerce_stock_always_in_stock: true
   created: true
+  list_price: true
   uid: true
