@@ -1,0 +1,22 @@
+uuid: 99a1f136-9310-47ea-978f-a66b4d5fa05b
+langcode: es
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.default
+    - field.storage.commerce_product_variation.field_background_color
+  module:
+    - color_field
+id: commerce_product_variation.default.field_background_color
+field_name: field_background_color
+entity_type: commerce_product_variation
+bundle: default
+label: Color
+description: 'Color de fondo'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  opacity: 1
+field_type: color_field_type
