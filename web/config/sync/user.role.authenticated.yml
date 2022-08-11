@@ -6,6 +6,7 @@ dependencies:
     - filter.format.basic_html
   module:
     - comment
+    - commerce_checkout
     - commerce_order
     - commerce_product
     - contact
@@ -20,6 +21,7 @@ label: 'Usuario autenticado'
 weight: 1
 is_admin: false
 permissions:
+  - 'access checkout'
   - 'access comments'
   - 'access content'
   - 'access shortcuts'
