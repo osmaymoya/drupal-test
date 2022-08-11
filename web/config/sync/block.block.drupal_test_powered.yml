@@ -1,0 +1,22 @@
+uuid: 2de4f0d9-df9f-4a3b-b4a1-eb896f4b0319
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - drupal_test
+_core:
+  default_config_hash: eYL19CLDyinGTWYQfBD1DswWzglEotE_kHnHx3AxTXM
+id: drupal_test_powered
+theme: drupal_test
+region: sidebar_first
+weight: 0
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Funciona con Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }
