@@ -10,6 +10,6 @@ dependencies:
 _core:
   default_config_hash: yeGwCxbA5dBAS_3eBkfaVrbxkASEM357dkjPZShKiR4
 id: profile.billing
-label: Billing
+label: 'Dirección de Pago'
 targetEntityType: profile
 cache: true

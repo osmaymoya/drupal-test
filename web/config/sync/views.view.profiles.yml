@@ -7,7 +7,7 @@ dependencies:
 _core:
   default_config_hash: iDeLvK90ucO3Qc2NIH8ot0W1saUd7U_XThA3P1QvuMs
 id: profiles
-label: Profiles
+label: Perfiles
 module: views
 description: ''
 tag: ''
@@ -16,11 +16,11 @@ base_field: profile_id
 display:
   default:
     id: default
-    display_title: Master
+    display_title: Máster
     display_plugin: default
     position: 0
     display_options:
-      title: Profiles
+      title: Perfiles
       fields:
         rendered_entity:
           id: rendered_entity
@@ -344,7 +344,7 @@ display:
       tags: {  }
   user_page:
     id: user_page
-    display_title: 'User page'
+    display_title: 'Página del usuario'
     display_plugin: embed
     position: 1
     display_options:
