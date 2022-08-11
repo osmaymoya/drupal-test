@@ -2,6 +2,16 @@
 font-size: 1.5rem;
 }
 
+.field--name-field-image img {
+  border-radius: 10px;
+}
+
+.field--name-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #6e7172;
+}
+
 /***** Product Teaser ******/
 .view-id-products_list .views-view-grid__item-inner{
   border: 1px solid #eaf1f6;
@@ -30,6 +40,6 @@ font-size: 1.5rem;
   padding: 0 .75rem 0rem .75rem;
 }
 
-.field--name-field-image img {
+.view-id-products_list .field--name-field-image img {
   border-radius: 10px 10px 0 0;
 }
