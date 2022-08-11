@@ -22,24 +22,15 @@ targetEntityType: commerce_product_variation
 bundle: default
 mode: default
 content:
-  commerce_stock_always_in_stock:
-    type: boolean_checkbox
+  field_background_color:
+    type: color_field_widget_html5
     weight: 5
     region: content
-    settings:
-      display_label: true
-    third_party_settings: {  }
-  field_background_color:
-    type: color_field_widget_default
-    weight: 14
-    region: content
-    settings:
-      placeholder_color: ''
-      placeholder_opacity: ''
+    settings: {  }
     third_party_settings: {  }
   field_body:
     type: text_textarea_with_summary
-    weight: 11
+    weight: 1
     region: content
     settings:
       rows: 9
@@ -49,7 +40,7 @@ content:
     third_party_settings: {  }
   field_image:
     type: image_image
-    weight: 13
+    weight: 4
     region: content
     settings:
       progress_indicator: throbber
@@ -57,7 +48,7 @@ content:
     third_party_settings: {  }
   field_qty:
     type: commerce_stock_level_simple_transaction
-    weight: 12
+    weight: 2
     region: content
     settings:
       step: '1'
@@ -66,26 +57,20 @@ content:
     third_party_settings: {  }
   langcode:
     type: language_select
-    weight: 2
+    weight: 6
     region: content
     settings:
       include_locked: true
     third_party_settings: {  }
-  list_price:
-    type: commerce_list_price
-    weight: -1
-    region: content
-    settings: {  }
-    third_party_settings: {  }
   price:
     type: commerce_price_default
-    weight: 0
+    weight: 3
     region: content
     settings: {  }
     third_party_settings: {  }
   sku:
     type: string_textfield
-    weight: -4
+    weight: 0
     region: content
     settings:
       size: 60
@@ -93,11 +78,13 @@ content:
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    weight: 10
+    weight: 7
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
 hidden:
+  commerce_stock_always_in_stock: true
   created: true
+  list_price: true
   uid: true
