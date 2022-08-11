@@ -9,6 +9,7 @@ dependencies:
     - field.field.commerce_product_variation.default.field_body
     - field.field.commerce_product_variation.default.field_image
     - field.field.commerce_product_variation.default.field_qty
+    - image.style.custom
   module:
     - commerce_price
     - image
@@ -22,7 +23,7 @@ content:
     label: hidden
     settings:
       image_link: content
-      image_style: ''
+      image_style: custom
       image_loading:
         attribute: lazy
     third_party_settings: {  }
