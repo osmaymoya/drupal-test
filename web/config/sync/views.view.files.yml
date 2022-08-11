@@ -456,8 +456,8 @@ display:
           total_pages: 0
           id: 0
           tags:
-            next: 'Siguiente >'
-            previous: '‹ Anterior'
+            next: 'Next ›'
+            previous: '‹ Previous'
           expose:
             items_per_page: false
             items_per_page_label: 'Items per page'
@@ -991,8 +991,8 @@ display:
           total_pages: 0
           id: 0
           tags:
-            next: 'Siguiente >'
-            previous: '‹ Anterior'
+            next: 'Next ›'
+            previous: '‹ Previous'
           expose:
             items_per_page: false
             items_per_page_label: 'Items per page'
@@ -1017,7 +1017,7 @@ display:
           exception:
             value: all
             title_enable: false
-            title: Todo(s)
+            title: All
           title_enable: true
           title: 'Información de uso de archivos para {{ arguments.fid }}'
           default_argument_type: fixed
