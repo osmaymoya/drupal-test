@@ -22,6 +22,7 @@
         "drupal/core-composer-scaffold": "^9.4",
         "drupal/core-project-message": "^9.4",
         "drupal/core-recommended": "^9.4",
+        "drupal/devel_generate_commerce": "^1.0",
         "drupal/inline_entity_form": "^1.0@RC",
         "drupal/pathauto": "^1.11"
     },

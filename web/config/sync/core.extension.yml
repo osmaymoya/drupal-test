@@ -12,6 +12,8 @@ module:
   color_field: 0
   comment: 0
   commerce: 0
+  commerce_cart: 0
+  commerce_checkout: 0
   commerce_number_pattern: 0
   commerce_order: 0
   commerce_price: 0
@@ -25,6 +27,9 @@ module:
   contextual: 0
   datetime: 0
   dblog: 0
+  devel: 0
+  devel_generate: 0
+  devel_generate_commerce: 0
   dynamic_page_cache: 0
   editor: 0
   entity: 0
