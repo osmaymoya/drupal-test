@@ -11,7 +11,7 @@ dependencies:
 _core:
   default_config_hash: sTKMNZJ4DVegYkx0Lake4yfkpxD7y_g2bQO28xTs5co
 id: commerce_cart_block
-label: 'Cart block'
+label: 'Bloque de la cesta de compra'
 module: views
 description: ''
 tag: commerce_cart_block
@@ -20,7 +20,7 @@ base_field: order_id
 display:
   default:
     id: default
-    display_title: Master
+    display_title: Máster
     display_plugin: default
     position: 0
     display_options:

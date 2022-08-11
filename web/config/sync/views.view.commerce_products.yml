@@ -9,7 +9,7 @@ dependencies:
 _core:
   default_config_hash: tu0PL5GIB4nIjUfFst2N0WsTO6Ju1WtX7lFr-ya9vAs
 id: commerce_products
-label: Products
+label: Productos
 module: views
 description: ''
 tag: Commerce
@@ -18,11 +18,11 @@ base_field: product_id
 display:
   default:
     id: default
-    display_title: Master
+    display_title: Máster
     display_plugin: default
     position: 0
     display_options:
-      title: Products
+      title: Productos
       fields:
         commerce_product_bulk_form:
           id: commerce_product_bulk_form
@@ -74,7 +74,7 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          action_title: 'With selection'
+          action_title: 'Con selección'
           include_exclude: exclude
           selected_actions: {  }
         title:
@@ -441,7 +441,7 @@ display:
           admin_label: ''
           plugin_id: text_custom
           empty: true
-          content: 'No products available.'
+          content: 'No hay productos disponibles.'
           tokenize: false
       sorts: {  }
       arguments: {  }

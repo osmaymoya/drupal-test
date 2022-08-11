@@ -9,7 +9,7 @@ dependencies:
 _core:
   default_config_hash: oBipN4Qg4xQvLoLKewOAOir49xYtzB-5ylzXaRtfAjg
 id: commerce_stores
-label: Stores
+label: Tiendas
 module: views
 description: ''
 tag: Commerce
@@ -18,11 +18,11 @@ base_field: store_id
 display:
   default:
     id: default
-    display_title: Master
+    display_title: Máster
     display_plugin: default
     position: 0
     display_options:
-      title: Stores
+      title: Tiendas
       fields:
         commerce_store_bulk_form:
           id: commerce_store_bulk_form
@@ -74,7 +74,7 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          action_title: 'With selection'
+          action_title: 'Con selección'
           include_exclude: exclude
           selected_actions: {  }
         name:
@@ -374,7 +374,7 @@ display:
           admin_label: ''
           plugin_id: text_custom
           empty: true
-          content: 'No stores available.'
+          content: 'No hay tiendas disponibles.'
           tokenize: false
       sorts: {  }
       arguments: {  }

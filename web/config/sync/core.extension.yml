@@ -72,4 +72,5 @@ module:
 theme:
   olivero: 0
   claro: 0
+  drupal_test: 0
 profile: standard

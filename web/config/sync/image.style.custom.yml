@@ -1,0 +1,15 @@
+uuid: b87b1f41-597b-4138-b5a2-891a9be67905
+langcode: es
+status: true
+dependencies: {  }
+name: custom
+label: 'Personalizado (teaser)'
+effects:
+  2d45fd57-65de-4388-9f6c-67aaa6a88d47:
+    uuid: 2d45fd57-65de-4388-9f6c-67aaa6a88d47
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 220
+      height: 220
+      anchor: center-center

@@ -11,7 +11,7 @@ dependencies:
 _core:
   default_config_hash: onODpRJw_ndLaTHVDc9-K-9CJHMEWxjZ1_KzgD4T2Mw
 id: commerce_user_orders
-label: 'User orders'
+label: 'Pedidos del usuario'
 module: views
 description: 'Display a list of placed orders for a user.'
 tag: Commerce
@@ -20,11 +20,11 @@ base_field: order_id
 display:
   default:
     id: default
-    display_title: Master
+    display_title: Máster
     display_plugin: default
     position: 0
     display_options:
-      title: Orders
+      title: Pedidos
       fields:
         order_id:
           id: order_id
@@ -102,7 +102,7 @@ display:
           entity_type: null
           entity_field: order_number
           plugin_id: field
-          label: 'Order number'
+          label: 'Número de pedido'
           exclude: false
           alter:
             alter_text: false
@@ -403,7 +403,7 @@ display:
           plugin_id: text
           empty: true
           content:
-            value: 'You have not placed any orders with us yet.'
+            value: 'No ha realizado ningún pedido con nosotros todavía.'
             format: basic_html
           tokenize: false
       sorts: {  }
@@ -569,7 +569,7 @@ display:
       tags: {  }
   order_page:
     id: order_page
-    display_title: 'User orders'
+    display_title: 'Pedidos del usuario'
     display_plugin: page
     position: 1
     display_options:
@@ -578,7 +578,7 @@ display:
       path: user/%user/orders
       menu:
         type: tab
-        title: Orders
+        title: Pedidos
         description: ''
         weight: 0
         expanded: false

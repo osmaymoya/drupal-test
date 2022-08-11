@@ -1,13 +1,13 @@
-uuid: 57d94ae8-7a50-42f2-a866-f3bb60ed680a
+uuid: d88e7cfd-ce6a-42df-959b-09b11db029bb
 langcode: es
 status: true
 dependencies:
   theme:
-    - olivero
+    - drupal_test
 _core:
   default_config_hash: ydSxdq7R66I8UMC460rOzlfzvlUL4VRbdwc6z9DWaUI
-id: olivero_secondary_local_tasks
-theme: olivero
+id: drupal_test_secondary_local_tasks
+theme: drupal_test
 region: highlighted
 weight: -3
 provider: null

@@ -12,7 +12,7 @@ dependencies:
 _core:
   default_config_hash: 5aCvI0j7w2fKsWcMEiLXM1CWuaKm5ndfOnCATVUMPGM
 id: commerce_cart_form
-label: 'Cart form'
+label: 'Formulario del carrito'
 module: views
 description: ''
 tag: commerce_cart_form
@@ -21,7 +21,7 @@ base_field: order_id
 display:
   default:
     id: default
-    display_title: Master
+    display_title: Máster
     display_plugin: default
     position: 0
     display_options:
@@ -36,7 +36,7 @@ display:
           entity_type: commerce_order_item
           entity_field: purchased_entity
           plugin_id: field
-          label: Item
+          label: Elemento
           exclude: false
           alter:
             alter_text: false
@@ -101,7 +101,7 @@ display:
           entity_type: commerce_order_item
           entity_field: unit_price
           plugin_id: field
-          label: Price
+          label: Precio
           exclude: false
           alter:
             alter_text: false
@@ -166,7 +166,7 @@ display:
           admin_label: ''
           entity_type: commerce_order_item
           plugin_id: commerce_order_item_edit_quantity
-          label: Quantity
+          label: Cantidad
           exclude: false
           alter:
             alter_text: false

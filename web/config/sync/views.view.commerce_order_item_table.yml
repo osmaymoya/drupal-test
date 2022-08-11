@@ -8,16 +8,16 @@ dependencies:
 _core:
   default_config_hash: EZYKCbgxvY_dDDwK9piZCx6wll1ArPTjellGybiFv10
 id: commerce_order_item_table
-label: 'Order items'
+label: 'Elementos de la orden'
 module: views
-description: 'Display a set of order items in a table.'
+description: 'Mostrar un conjunto de artículos en una tabla.'
 tag: ''
 base_table: commerce_order_item
 base_field: order_item_id
 display:
   default:
     id: default
-    display_title: Master
+    display_title: Máster
     display_plugin: default
     position: 0
     display_options:
@@ -97,7 +97,7 @@ display:
           entity_type: commerce_order_item
           entity_field: unit_price
           plugin_id: field
-          label: 'Unit price'
+          label: 'Precio unitario'
           exclude: false
           alter:
             alter_text: false
@@ -163,7 +163,7 @@ display:
           entity_type: commerce_order_item
           entity_field: quantity
           plugin_id: field
-          label: Quantity
+          label: Cantidad
           exclude: false
           alter:
             alter_text: false
@@ -231,7 +231,7 @@ display:
           entity_type: commerce_order_item
           entity_field: total_price
           plugin_id: field
-          label: 'Total price'
+          label: 'Precio total'
           exclude: false
           alter:
             alter_text: false
@@ -317,7 +317,7 @@ display:
           admin_label: ''
           plugin_id: text_custom
           empty: true
-          content: 'There are no order items yet.'
+          content: 'Todavía no hay elementos de pedido.'
           tokenize: false
       sorts: {  }
       arguments:

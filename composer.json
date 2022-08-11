@@ -19,6 +19,7 @@
         "drupal/color_field": "^2.5",
         "drupal/commerce": "^2.31",
         "drupal/commerce_stock": "^1.0",
+        "drupal/commerce_wishlist": "3.x-dev@dev",
         "drupal/core-composer-scaffold": "^9.4",
         "drupal/core-project-message": "^9.4",
         "drupal/core-recommended": "^9.4",
