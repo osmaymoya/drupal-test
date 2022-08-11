@@ -16,9 +16,14 @@
     ],
     "require": {
         "composer/installers": "^1.9",
+        "drupal/color_field": "^2.5",
+        "drupal/commerce": "^2.31",
+        "drupal/commerce_stock": "^1.0",
         "drupal/core-composer-scaffold": "^9.4",
         "drupal/core-project-message": "^9.4",
-        "drupal/core-recommended": "^9.4"
+        "drupal/core-recommended": "^9.4",
+        "drupal/inline_entity_form": "^1.0@RC",
+        "drupal/pathauto": "^1.11"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -90,5 +95,8 @@
                 "      composer remove drupal/core-project-message"
             ]
         }
+    },
+    "require-dev": {
+        "drush/drush": "^11.1"
     }
 }
