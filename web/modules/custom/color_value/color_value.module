@@ -1,0 +1,23 @@
+<?php
+
+/**
+ * @file
+ * This module provide color value of field added by color_field module.
+ */
+
+
+
+function color_value_preprocess_commerce_product(&$variables)
+{
+  // get product variations from product. In this project one product only can have one product variation,
+  // but these can change
+  $product_variations = $variables['elements']['#commerce_product']->{'variations'}->referencedEntities();
+
+  // get color code from each product variation of product
+  $colors = array_map(function($item){
+    return $item->{'field_background_color'}->{'color'};
+  }, $product_variations);
+
+  // pass to frontend background colors string join by ","
+  $variables['background_color'] = join(", ", $colors);
+}

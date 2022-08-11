@@ -1,0 +1,23 @@
+uuid: 15037147-107c-4eba-9993-3311bc96463a
+langcode: es
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.default
+    - field.storage.commerce_product_variation.field_qty
+  module:
+    - commerce_stock_field
+id: commerce_product_variation.default.field_qty
+field_name: field_qty
+entity_type: commerce_product_variation
+bundle: default
+label: Cantidad
+description: 'Existencia del producto en almacén'
+required: false
+translatable: false
+default_value:
+  -
+    value: null
+default_value_callback: ''
+settings: {  }
+field_type: commerce_stock_level
