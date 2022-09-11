@@ -1,0 +1,9 @@
+name: Drupal Test
+type: theme
+description: 'Custom theme to drupal test exercise'
+'base theme': olivero
+version: 1.x
+core_version_requirement: ^9
+
+libraries:
+  - drupal_test/custom-css

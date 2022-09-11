@@ -1,0 +1,23 @@
+uuid: 72078b9d-b661-414f-a6e6-82a92c2e3654
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+  theme:
+    - drupal_test
+_core:
+  default_config_hash: 0gq3VPg-_UM69FCCWurLFIrrnIjC2HLKhwo9iQNtcUo
+id: drupal_test_syndicate
+theme: drupal_test
+region: sidebar_first
+weight: 0
+provider: null
+plugin: node_syndicate_block
+settings:
+  id: node_syndicate_block
+  label: 'Canal RSS'
+  label_display: '0'
+  provider: node
+  block_count: 10
+visibility: {  }

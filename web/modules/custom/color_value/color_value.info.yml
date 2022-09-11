@@ -1,0 +1,8 @@
+name: Color Value
+type: module
+description: 'Provides a color value to front.'
+core_version_requirement: ^8 || ^9
+package: Custom
+dependencies:
+  - color_field
+  - commerce_stock
